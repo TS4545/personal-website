@@ -1,0 +1,180 @@
+/* GENERAL STYLES */
+/* --- COLOR VARIABLES --- */
+:root {
+    --accent-color: #EB9486; /* Deep Navy Blue (Change this for your main accent!) */
+    --light-accent-color: #272838; /* Light Blue for Matrix Contrast (Change this for the falling text!) */
+    --background-dark: #5b5b72;
+    --content-bg: #313235;
+    --text-color: #E0E0E0;
+    --border-color: #333333;
+    --black: #272838;
+}
+/* ----------------------- */
+
+body {
+    background-color: var(--background-dark); 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color); 
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto; 
+    padding: 0;
+}
+
+/* 1. HEADER AND MATRIX ANIMATION STYLES */
+header {
+    background-color: var(--content-bg); 
+    padding: 20px 0;
+    position: relative; 
+    overflow: hidden; 
+    border-bottom: 3px solid var(--accent-color); /* Deep Navy divider */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Container for the canvas to control its size and positioning within the header */
+#matrix-rain-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+#rain-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+/* Wrapper to place text content cleanly on top of the animation */
+.header-content-wrapper {
+    position: relative; 
+    z-index: 5; /* Higher than the canvas */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    
+    /* Flexbox for side-by-side alignment */
+    display: flex;
+    justify-content: space-between; /* Puts H1 on left, Nav on right */
+    align-items: center; /* Vertically centers the items */
+}
+
+header h1 {
+    color: var(--accent-color); /* Deep Navy */
+    font-size: 2.5em; 
+    margin: 0;
+}
+
+nav {
+    margin-left: auto; /* Pushes the navigation to the right */
+}
+
+nav a {
+    color: var(--accent-color); /* Deep Navy */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+    font-weight: 500; 
+    padding: 5px 10px; 
+    border: 1px solid var(--accent-color); /* Deep Navy */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--accent-color); /* Deep Navy */
+    color: var(--black); /* Black text on hover for contrast */
+}
+
+/* 2. MAIN CONTENT STYLES */
+section {
+    background-color: var(--content-bg); 
+    padding: 30px;
+    margin-bottom: 20px;
+    
+    /* Subtle border to separate content from background */
+    border: 1px solid var(--border-color); 
+    box-shadow: none; 
+}
+
+h2 {
+    color: var(--accent-color); /* Deep Navy */
+    border-bottom: 1px solid var(--accent-color); /* Deep Navy */
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: var(--text-color); 
+    margin-top: 15px;
+}
+
+/* Buttons and Links */
+.btn {
+    display: inline-block;
+    /* --- UPDATED BUTTON STYLE --- */
+    background: var(--content-bg); /* Dark charcoal background (darker color) */
+    color: var(--accent-color); /* Deep Navy text (accent color) */
+    border: 1px solid var(--accent-color); /* Deep Navy border */
+    /* ----------------------------- */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 0; 
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: var(--accent-color); /* Hover fill with accent color */
+    color: var(--content-bg); /* Hover text color black/dark gray */
+    border-color: var(--accent-color);
+}
+
+/* ADDED RULE: Ensures links in the contact address use the accent color */
+#contact address a {
+    color: var(--accent-color); /* Deep Navy */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact address a:hover {
+    color: var(--text-color); /* Light Gray on hover */
+    text-decoration: underline;
+}
+
+.project-card {
+    border-left: 5px solid var(--accent-color); /* Deep Navy */
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.project-links a {
+    color: var(--accent-color); /* Deep Navy */
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--content-bg); 
+    color: #A0A0A0;
+    border-top: 1px solid var(--border-color);
+    margin-top: 40px;
+}

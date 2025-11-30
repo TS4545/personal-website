@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Projects</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <header>
+        <!-- The dedicated container for the matrix canvas -->
+        <div id="matrix-rain-container">
+            <canvas id="rain-canvas"></canvas>
+        </div>
+        
+        <div class="header-content-wrapper">
+            <h1>Project Showcase</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="projects-list">
+            <h2></h2>
+            <p>Here are some of the applications and websites I have built. Concept ---> working product.</p>
+            
+            <article class="project-card">
+                <h3>Railway track Visualizer</h3>
+                <p>website that uses an interactive, custom-styled Google Map to highlight major North American freight train routes and allows users to search for cities to instantly zoom to rail hubs. It's built using HTML, JavaScript, and Tailwind CSS for styling, and uses GitHub Actions for secure deployment to hide the necessary mapping key.</p>
+                
+                 <div class="video-container">
+                
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="http://train-map-kappa.vercel.app"
+                        frameborder="0" 
+                        referrerpolicy='strict-origin-when-cross-origin'
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="project-links">
+                    <a href="http://train-map-kappa.vercel.app" target="_blank">View Live Site</a> | 
+                    <a href="https://github.com/TS4545/train-map" target="_blank">Github Repo</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <h3>Civly Social Media</h3>
+                <p>Civic engagement based social media platform that allows community members to submit local issues, receive automated AI-generated summaries, and access relevant legislative context in an intuitive interface. The system is built using a React and Tailwind frontend, an Express backend with SQLite, and integrated OpenAI API for analysis and information delivery.</p>
+                <!--embedded video-->
+                <div class="video-container">
+                    <!-- Replace this 'src' URL with the actual YouTube embed URL of your video, 
+                         or the URL of your live hosted project demo. -->
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/oOPSH_LrY3s"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://civly-social.com" target="_blank">View Live Site</a> | 
+                    <a href="" target="https://github.com/TS4545/civic_board">Github Repo</a>
+                </div>
+            </article>
+        
+
+            <article class="project-card">
+                <h3>RC Aviation rocket gyroscope and website demo</h3>
+                <p>Embedded flight-control system that uses an onboard gyroscope module to capture real-time orientation and angular velocity data, enabling precise tracking of a rocket’s attitude throughout flight. Developed in Arduino C++, the code processes gyroscopic telemetry, and triggers parachute deployment at the correct stage to ensure a safe and reliable recovery sequence.</p>      
+                
+                <div class="project-links">
+                    <a href="https://github.com/TS4545/Anderson_RC_Aviation" target="_blank">Github Repo</a>
+                 
+                </div>
+            </article>
+        
+        <article class="project-card">
+                <h3>Game Development Projects</h3>
+                <p>Unity-based game development projects focused on building interactive systems such as tile-based world generation, AI behavior, and virtual reality experiences. Implemented using C# and Unity’s component system, projects integrate custom scripts, logic, and optimized code to create responsive gameplay, scalable world interactions, and a cohesive player experience.</p>      
+                
+                <div class="video-container">
+                    
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/4nQ9cZYorK4"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+
+                        allowfullscreen>
+                    </iframe>
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/HB_v1ry-S4g"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+
+                <div class="project-links">
+                    <a href="https://github.com/TS4545/Anderson_RC_Aviation" target="_blank">Github Repo</a>
+                 
+                </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tyler Samman</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script> 
+</body>
+</html>
